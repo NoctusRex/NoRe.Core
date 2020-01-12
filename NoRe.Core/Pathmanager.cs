@@ -1,17 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NoRe.Core
 {
+    /// <summary>
+    /// Contains paths used by NoRe Packages
+    /// </summary>
     public static class Pathmanager
     {
         public static string StartupDirectory { get { return Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); } }
       
+        /// <summary>
+        /// Creats the directory if it does not exist
+        /// </summary>
         public static string ConfigurationDirectory
         {
             get

@@ -6,6 +6,9 @@ using System.Xml.Serialization;
 
 namespace NoRe.Core
 {
+    /// <summary>
+    /// Allows conversion from objects into xml strings and vice versa
+    /// </summary>
     public static class XmlConverter
     {
         public static string ConvertObjectToXml(object @object)
